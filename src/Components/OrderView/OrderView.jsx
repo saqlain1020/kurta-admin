@@ -5,6 +5,9 @@ const useStyles = makeStyles((theme) => ({
   root: {},
   list: {
     listStyle: "inside",
+    fontSize:18,
+    lineHeight:2,
+    
   },
 }));
 
@@ -14,21 +17,21 @@ const OrderView = () => {
   return (
     <div className={classes.root}>
       <ul className={classes.list}>
-        <li>Order Id: asdasfaf</li>
-        <li>name: lorem ipsum</li>
-        <li>email: lorem ipsum</li>
-        <li>contact: lorem ipsum</li>
-        <li>address: lorem ipsum</li>
-        <li>shoulder: lorem ipsum</li>
-        <li>chest: lorem ipsum</li>
-        <li>waist: lorem ipsum</li>
-        <li>hips: lorem ipsum</li>
-        <li>sleeves: lorem ipsum</li>
-        <li>thigh: lorem ipsum</li>
-        <li>calf: lorem ipsum</li>
-        <li>shalwarLength: lorem ipsum</li>
-        <li>kurtaLength: lorem ipsum</li>
-        <li>collar: lorem ipsum</li>
+        <li><b>Order Id:</b> asdasfaf</li>
+        <li><b>name: </b>lorem ipsum</li>
+        <li><b>email: </b>lorem ipsum</li>
+        <li><b>contact: </b>lorem ipsum</li>
+        <li><b>address: </b>lorem ipsum</li>
+        <li><b>shoulder: </b>lorem ipsum</li>
+        <li><b>chest: </b>lorem ipsum</li>
+        <li><b>waist: </b>lorem ipsum</li>
+        <li><b>hips: </b>lorem ipsum</li>
+        <li><b>sleeves: </b>lorem ipsum</li>
+        <li><b>thigh: </b>lorem ipsum</li>
+        <li><b>calf: </b>lorem ipsum</li>
+        <li><b>shalwarLength: </b>lorem ipsum</li>
+        <li><b>kurtaLength: </b>lorem ipsum</li>
+        <li><b>collar: </b>lorem ipsum</li>
       </ul>
     </div>
   );

@@ -99,7 +99,7 @@ const Orders = () => {
       </Container>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>
-          <Typography variant="h5">Order View</Typography>
+          <Typography variant="h5"><b>Order View</b></Typography>
         </DialogTitle>
         <DialogContent>
           <OrderView />
