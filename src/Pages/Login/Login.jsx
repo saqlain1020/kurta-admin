@@ -10,13 +10,14 @@ import {
   Grid,
 } from "@material-ui/core";
 import { CardHeader } from "@material-ui/core";
+import history from "src/Util/history";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
   card: {
     maxWidth: 350,
     margin: "auto",
-    marginTop: 20,
+    marginTop: 100,
   },
 }));
 
@@ -24,6 +25,8 @@ const Login = () => {
   const classes = useStyles();
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("Submit")
+    history.push("/orders");
   };
   return (
     <Container maxWidth="lg" className={classes.root}>
@@ -39,13 +42,13 @@ const Login = () => {
             </Typography>
             <Grid container spacing={2}>
               <Grid item xs={12}>
-                <TextField label="Email" fullWidth type="email" />
+                <TextField label="Email" fullWidth type="email" required/>
               </Grid>
               <Grid item xs={12}>
-                <TextField label="Password" fullWidth type="password" />
+                <TextField label="Password" fullWidth type="password" required/>
               </Grid>
               <Grid item xs={12}>
-                <Button variant="outlined" color="primary">
+                <Button variant="outlined" color="primary" type="submit">
                   Submit
                 </Button>
               </Grid>

@@ -56,10 +56,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const links = [
-  {
-    name: "login",
-    path: "/",
-  },
+  // {
+  //   name: "login",
+  //   path: "/",
+  // },
   {
     name: "orders",
     path: "/orders",
